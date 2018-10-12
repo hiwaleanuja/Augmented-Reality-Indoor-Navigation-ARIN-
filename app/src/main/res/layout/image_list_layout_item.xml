@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="3dp"
+    >
+
+
+<android.support.v7.widget.CardView
+    android:id="@+id/imageCards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageThumbnail"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/imageTitle"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imageThumbnail"
+            android:text="Eisha Footprints"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/imageDelete"
+            android:layout_width="17dp"
+            android:layout_height="19dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/close" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

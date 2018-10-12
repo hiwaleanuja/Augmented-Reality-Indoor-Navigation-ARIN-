@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BTNmyProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/myproject"
+        android:text="My Locations"
+        app:layout_constraintEnd_toStartOf="@+id/BTNtemplate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/BTNtemplate"
+        android:layout_width="117dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/template"
+        android:text="templates"
+        app:layout_constraintBottom_toTopOf="@+id/BTNcalibrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BTNmyProjects"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
