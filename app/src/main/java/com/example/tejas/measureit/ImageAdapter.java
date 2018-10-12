@@ -58,7 +58,10 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
         try {
             mUri = Uri.parse(image.getImageThumbnailUri());
-            bmp = MediaStore.Images.Media.getBitmap(mCtx.getContentResolver(), mUri);
+            bmp = MediaStore.Images.Media.getBitmap(
+                    mCtx.getContentResolver(),
+                    mUri
+            );
 
         }
         catch (IOException ex){
